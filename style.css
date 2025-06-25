@@ -790,3 +790,20 @@ footer .wave#wave4{
     font-size: 40px;
     padding-left: 40px;
 }
+
+html {
+    zoom: 0.75;
+}
+
+/* Fallback for Firefox */
+@-moz-document url-prefix() {
+    html {
+        zoom: unset;
+    }
+    body {
+        transform: scale(0.75);
+        transform-origin: top left;
+        width: 133.33vw;
+        overflow-x: auto;
+    }
+}
